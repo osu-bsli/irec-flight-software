@@ -280,6 +280,7 @@ int SCS::checkHead()
 
 int	SCS::Ack(u8 ID)
 {
+	return 1; // TODO
 	Error = 0;
 	if(ID!=0xfe && Level){
 		if(!checkHead()){

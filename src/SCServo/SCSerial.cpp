@@ -45,7 +45,7 @@ int SCSerial::writeSCS(unsigned char *nDat, int nLen)
 	if(nDat==NULL){
 		return 0;
 	}
-	printf("writing %d bytes\n", nLen);
+	//printf("writing %d bytes\n", nLen);
 	return write(SerialFD, nDat, nLen);
 }
 
@@ -56,10 +56,12 @@ int SCSerial::writeSCS(unsigned char bDat)
 
 void SCSerial::rFlushSCS()
 {
+	//printf("rFlushSCS\n");
 	tcflush(SerialFD, TCIFLUSH);
 }
 
 void SCSerial::wFlushSCS()
 {
+	//printf("wFlushSCS\n");
 	tcdrain(SerialFD);
 }
