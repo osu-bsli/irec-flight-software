@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+gmake_minimum_required(VERSION 3.16)
 project(irec-flight-software)
 
 set(CMAKE_C_COMPILER aarch64-linux-gnu-gcc)
@@ -12,7 +12,8 @@ add_executable(irec-flight-software)
 
 target_link_libraries(irec-flight-software PRIVATE
     PkgConfig::deps
-    -static -static-libstdc++ -static-libgcc
+    -static-libstdc++ -static-libgcc
+    wiringPi
 )
 
 add_subdirectory(src)
