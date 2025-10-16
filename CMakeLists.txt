@@ -19,6 +19,7 @@ target_link_libraries(irec-flight-software PRIVATE
     PkgConfig::deps
     -static-libstdc++ -static-libgcc
     wiringPi
+    curses
     #-fsanitize=address
 )
 

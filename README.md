@@ -1,7 +1,7 @@
 # Ubuntu dependencies
 
 ```
-sudo apt install -y build-essential cmake ninja-build pkg-config autoconf autoconf-archive libtool
+sudo apt install -y build-essential cmake ninja-build pkg-config autoconf autoconf-archive libtool libncurses-dev
 ```
 
 # How to get UART working on Pi
